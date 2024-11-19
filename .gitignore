@@ -1,5 +1,4 @@
 /.*/
-!/*.pdb
-/bin
-/obj
-/release
+/Basic/bin/
+/Basic/obj
+/Basic/release
