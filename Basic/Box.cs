@@ -4,26 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Basic;
 namespace Geoshape
 {
-    internal class Box
+    //Inheritance
+    internal class Box : Shape
     {
 
-        int length, breadth, height;
-        public Box(int length, int breadth, int height)
+        public Box(double length, double breadth, double height)
         {
             Console.WriteLine("Box constructed");
             this.length = length;
             this.breadth = breadth;
             this.height = height;
         }
-        private int CalculateArea()
+       
+        public void PrintArea()
         {
-            return length * breadth;
-        }
-        public int PrintArea()
-        {
-            return CalculateArea();
+            Console.WriteLine(this.CalculateArea());
         }
         //Function can be called directly with className without creating an object of the class 
         public static void PrintMe()
