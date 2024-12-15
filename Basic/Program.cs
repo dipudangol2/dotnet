@@ -30,6 +30,17 @@ namespace Basic
     }
     //class initialization
 
+
+    //enums
+    public enum Direction//they are converted into index when converted
+    {
+        NORTH,
+        SOUTH, 
+        EAST,
+        WEST,
+        
+    };
+
     internal class Program
     {
         static void increment(ref int count)
@@ -44,7 +55,11 @@ namespace Basic
             Cat c = new Cat();
             c.Eat();
              */
-            Properties p = new Properties();
+            Direction value = Direction.NORTH;
+            int num = (int)Direction.SOUTH;
+            Console.WriteLine(value);
+            Console.WriteLine(num);
+            /*Properties p = new Properties();
             Console.WriteLine(p.X);
             p.X = 5;
             Console.WriteLine(p.X);
@@ -61,6 +76,7 @@ namespace Basic
             Box box = new Box(5, 7, 9);
             box.PrintArea();
             Box.PrintMe();
+            */
 
             Console.ReadLine();
         }
